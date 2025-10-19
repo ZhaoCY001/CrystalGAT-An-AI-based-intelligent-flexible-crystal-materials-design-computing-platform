@@ -14,13 +14,13 @@ Importance.py provides a simplified framework for using Graph Attention Networks
 The model identifies important functional groups or atomic environments that contribute significantly to the classification results.
 
 Functional group replacement.py provides a "modular framework" for molecular structure modification and property prediction using a Graph Attention Network (GAT).  
-All implementation details have been simplified to prevent direct reproduction of the original research code.
+All implementation details in the code have been simplified. Please add evaluation, optimization, and other modules as needed when using it.
 
 ## 🧩 File Description
 CrystalGAT.py | Graph Attention Network model for crystalline mechanical property prediction (main model). |
 GCN.py | Graph Convolutional Network baseline. |
-Transformer.py | Transformer-based sequence model using SMILES input. |
-MLP.py | Multilayer Perceptron trained on molecular descriptors. |
+Transformer.py | Transformer-based model. |
+MLP.py | Multilayer Perceptron. |
 RF.py | Random Forest baseline. |
 SVM.py | Support Vector Machine baseline. |
 XGBoost.py | XGBoost baseline. |
