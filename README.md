@@ -13,6 +13,9 @@ CrystalGAT serves as the core deep learning model, while six other baseline mode
 Importance.py provides a simplified framework for using Graph Attention Networks (GAT) to analyze molecular structures represented by SMILES strings.
 The model identifies important functional groups or atomic environments that contribute significantly to the classification results.
 
+Functional group replacement.py provides a "modular framework" for molecular structure modification and property prediction using a Graph Attention Network (GAT).  
+All implementation details have been simplified to prevent direct reproduction of the original research code.
+
 ## 🧩 File Description
 CrystalGAT.py | Graph Attention Network model for crystalline mechanical property prediction (main model). |
 GCN.py | Graph Convolutional Network baseline. |
@@ -22,8 +25,9 @@ RF.py | Random Forest baseline. |
 SVM.py | Support Vector Machine baseline. |
 XGBoost.py | XGBoost baseline. |
 Importance.py
+Functional group replacement.py
 ---
-## 📝 Usage
+## 📝 Usage for Importance.py
 Prepare training data
 Format: Excel file (.xlsx) with at least two columns:
 SMILES: molecular structure
@@ -32,6 +36,14 @@ Place the model file
 Put the pretrained model file (e.g., best_model.pth) into the models/ or root directory.
 
 best_model.pth could be found at https://huggingface.co/spaces/ZZZCCCYYY/CrystalGAT.
+
+## 📝 Usage for Functional group replacement.py
+
+Prepare processed_data.xlsx with a column named SMILES.
+Place your pre-trained model as best_model.pth.
+Run:
+Functional group replacement.py
+The generated modified molecules will be saved in modified_molecules.xlsx.
 
 ## ⚙️ Requirements
 
